@@ -387,6 +387,15 @@ h6 {
   color: rgba(18, 18, 18, 0.6);
 }
 
+.column-footer__item a {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.column-footer__item a:hover {
+  color: #121212;
+}
+
 .socials__name {
   padding-bottom: 0.75rem;
 }
@@ -730,6 +739,13 @@ h6 {
           justify-content: center;
 }
 
+.customers__dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10.75rem;
+}
+
 .customers__title {
   text-align: center;
   padding-bottom: 6.8125rem;
@@ -792,6 +808,41 @@ h6 {
 
 .customers__slider {
   padding: 15rem 0rem;
+  position: relative;
+}
+
+.dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 18%;
+  top: 72%;
+  z-index: 10;
+}
+
+.swiper-pagination-bullet {
+  display: block;
+  width: 10px;
+  height: 16px;
+  border-radius: 20px;
+  background: #C4C4C4;
+  -webkit-transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in 0s;
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  width: 24px;
+  height: 12px;
+  background: #FF6428;
+  margin: 0px 4px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .browser {
@@ -839,6 +890,33 @@ h6 {
   position: absolute;
   right: -1.25rem;
   top: -4.6875rem;
+}
+
+.dn {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.dnfirst {
+  display: none;
+}
+
+.dnsecond {
+  display: none;
+}
+
+.db-first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.db-second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .swiper {
@@ -1050,6 +1128,13 @@ h6 {
   }
 }
 
+@media (max-width: 66.375em) {
+  .dots {
+    top: 70%;
+    right: 16%;
+  }
+}
+
 @media (max-width: 65.625em) {
   .browser__images {
     top: -2rem;
@@ -1098,6 +1183,12 @@ h6 {
         flex-wrap: wrap;
     gap: 1.875rem;
     row-gap: 1.875rem;
+  }
+}
+
+@media (max-width: 59.375em) {
+  .dots {
+    right: 10%;
   }
 }
 
@@ -1187,6 +1278,13 @@ h6 {
 
   .main {
     padding-bottom: 11.25rem;
+  }
+}
+
+@media (max-width: 47.5em) {
+  .dots {
+    right: 45%;
+    top: 75%;
   }
 }
 
@@ -1337,6 +1435,12 @@ h6 {
   }
 }
 
+@media (max-width: 43.875em) {
+  .dots {
+    top: 90%;
+  }
+}
+
 @media (max-width: 43.75em) {
   .customers__slider {
     padding: 5rem 0rem;
@@ -1439,6 +1543,17 @@ h6 {
 }
 
 @media (max-width: 32.5em) {
+  .customers__dots {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .dots {
+    right: 40%;
+    top: 95%;
+  }
+
   .customers__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
