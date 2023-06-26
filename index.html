@@ -6,7 +6,8 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230625152513">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230626124848">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,9 +22,9 @@
 				<div class="header__menu menu">
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="" class="menu__link">Store</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Collections</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Support</a></li>
+							<li class="menu__item"><a data-goto=".page__store" data-goto-speed="1000" data-goto-top="40" href="" class="menu__link">Store</a></li>
+							<li class="menu__item"><a data-goto=".page__categories" data-goto-speed="1000" data-goto-top="40" href="" class="menu__link">Collections</a></li>
+							<li class="menu__item"><a data-goto=".footer" data-goto-speed="1000" href="" class="menu__link">Support</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -48,7 +49,7 @@
 						<button class="main__button">
 							Get the App
 						</button>
-						<a href="#" class="main__links"><img src="img/main/links.svg" alt=""></a>
+						<a href="#" data-goto=".page__browser" data-goto-top="100" class="main__links"><img src="img/main/links.svg" alt=""></a>
 					</div>
 				</div>
 			</section>
@@ -256,8 +257,8 @@
 						<div class="customers__wrapper">
 							<div class="customers__row">
 								<div class="customers__images">
-									<img src="img/customers/main.svg" alt="">
-									<img src="img/customers/decor.svg" alt="">
+									<img data-prlx-mouse data-prlx-dxr src="img/customers/main.svg" alt="">
+									<img data-prlx-mouse src="img/customers/decor.svg" alt="">
 								</div>
 								<div class="customers__main">
 									<p class="customers__text">
@@ -277,8 +278,8 @@
 						<div class="customers__wrapper">
 							<div class="customers__row">
 								<div class="customers__images">
-									<img src="img/customers/2.svg" alt="">
-									<img src="img/customers/decor 2.svg" alt="">
+									<img data-prlx-mouse data-prlx-dxr src="img/customers/2.svg" alt="">
+									<img data-prlx-mouse src="img/customers/decor 2.svg" alt="">
 								</div>
 								<div class="customers__main">
 									<p class="customers__text">
@@ -298,8 +299,8 @@
 						<div class="customers__wrapper">
 							<div class="customers__row">
 								<div class="customers__images">
-									<img src="img/customers/3.svg" alt="">
-									<img src="img/customers/decor 3.svg" alt="">
+									<img data-prlx-mouse data-prlx-dxr src="img/customers/3.svg" alt="">
+									<img data-prlx-mouse src="img/customers/decor 3.svg" alt="">
 								</div>
 								<div class="customers__main">
 									<p class="customers__text">
@@ -320,8 +321,8 @@
 						<div class="customers__wrapper">
 							<div class="customers__row">
 								<div class="customers__images">
-									<img src="img/customers/4.svg" alt="">
-									<img src="img/customers/decor 4.svg" alt="">
+									<img data-prlx-mouse data-prlx-dxr src="img/customers/4.svg" alt="">
+									<img data-prlx-mouse src="img/customers/decor 4.svg" alt="">
 								</div>
 								<div class="customers__main">
 									<p class="customers__text">
@@ -388,9 +389,9 @@
 						<div class="footer__column column-footer pages">
 							<p class="column-footer__name">Pages</p>
 							<ul class="column-footer__list">
-								<li class="column-footer__item"><a href="">Store</a></li>
-								<li class="column-footer__item"><a href="">Collections</a></li>
-								<li class="column-footer__item"><a href="">Support</a></li>
+								<li class="column-footer__item"><a href="" data-goto=".page__store" data-goto-speed="1000" data-goto-top="40">Store</a></li>
+								<li class="column-footer__item"><a href="" data-goto=".page__categories" data-goto-speed="1000" data-goto-top="40">Collections</a></li>
+								<li class="column-footer__item"><a href="" data-goto=".footer" data-goto-speed="1000">Support</a></li>
 							</ul>
 						</div>
 						<div class="footer__column column-footer product">
@@ -427,7 +428,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230625152513"></script>
+	<script src="js/app.min.js?_v=20230626124848"></script>
 </body>
 
 </html>
